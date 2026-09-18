@@ -1197,10 +1197,13 @@ input {
     font-size: 48px;
   }
 
-  .hero-mark {
-    right: -120px;
-    width: 400px;
-  }
+ .hero-mark {
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  width: 70vw;
+  max-width: 500px;
+}
 
   .product-grid {
     gap: 12px;
