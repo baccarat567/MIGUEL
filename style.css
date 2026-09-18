@@ -877,3 +877,8 @@ footer {
     width: 100%;
   }
 }
+@media (max-width: 800px) {
+  .hero {
+    background: red !important;
+  }
+}
