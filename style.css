@@ -1217,3 +1217,6 @@ input {
     grid-column: auto;
   }
 }
+.hero {
+    outline: 5px solid red !important;
+}
