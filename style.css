@@ -862,13 +862,15 @@ footer {
 }
 @media (max-width: 800px) {
   .hero {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: 0;
     overflow: hidden;
     background-size: cover;
     background-position: center center;
   }
+}
 
   .hero::before,
   .hero::after {
