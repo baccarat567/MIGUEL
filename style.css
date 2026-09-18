@@ -1902,3 +1902,216 @@ input {
   }
 
 }
+/* =================================
+   MIGUEL
+   STYLE.CSS — PART 4
+   MOBILE REFINEMENT
+================================= */
+
+@media (max-width: 800px) {
+
+  /* =========================
+     HEADER
+  ========================= */
+
+  .site-header {
+    height: 72px;
+    padding: 0 24px;
+  }
+
+  .brand img {
+    width: 145px;
+    height: 48px;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .header-actions {
+    gap: 18px;
+  }
+
+
+  /* =========================
+     HERO
+  ========================= */
+
+  .hero {
+    width: 100%;
+    min-height: 680px;
+
+    padding: 120px 24px 70px;
+
+    display: flex;
+    align-items: flex-end;
+
+    overflow: hidden;
+  }
+
+  .hero-copy {
+    width: 100%;
+    max-width: none;
+  }
+
+  .hero h1 {
+    margin-bottom: 28px;
+
+    font-size: clamp(48px, 13vw, 68px);
+    line-height: 0.94;
+
+    letter-spacing: -0.025em;
+  }
+
+  .hero-copy > p:not(.eyebrow) {
+    max-width: 100%;
+
+    font-size: 14px;
+    line-height: 1.9;
+  }
+
+  .hero-mark {
+    right: -100px;
+    top: 150px;
+
+    width: 400px;
+
+    opacity: 0.11;
+  }
+
+
+  /* =========================
+     SECTION
+  ========================= */
+
+  .section {
+    width: 100%;
+    padding: 85px 24px;
+  }
+
+  .section-heading {
+    margin-bottom: 50px;
+  }
+
+  .section-heading h2 {
+    font-size: 40px;
+    line-height: 0.98;
+    letter-spacing: 0.07em;
+  }
+
+  .section-note {
+    margin-top: 25px;
+
+    font-size: 14px;
+    line-height: 1.9;
+  }
+
+
+  /* =========================
+     EDITORIAL
+  ========================= */
+
+  .editorial {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .editorial-image {
+    width: 100%;
+    min-height: 380px;
+  }
+
+  .editorial-copy {
+    width: 100%;
+    padding: 75px 24px 90px;
+  }
+
+  .editorial-copy h2 {
+    margin-bottom: 32px;
+
+    font-size: 46px;
+    line-height: 0.96;
+  }
+
+  .editorial-copy > p:not(.eyebrow) {
+    margin-bottom: 35px;
+
+    font-size: 14px;
+    line-height: 2;
+  }
+
+
+  /* =========================
+     LOOKBOOK
+  ========================= */
+
+  .lookbook {
+    width: 100%;
+    padding: 85px 24px;
+  }
+
+  .lookbook-grid {
+    grid-template-columns: 1fr;
+    gap: 1px;
+  }
+
+  .lookbook-card {
+    min-height: 400px;
+    padding: 32px;
+  }
+
+
+  /* =========================
+     JOURNAL
+  ========================= */
+
+  .journal {
+    width: 100%;
+    padding: 85px 24px;
+  }
+
+  .journal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .journal-card {
+    min-height: 260px;
+    padding: 32px;
+  }
+
+
+  /* =========================
+     NEWSLETTER
+  ========================= */
+
+  .newsletter {
+    width: 100%;
+    padding: 90px 24px;
+  }
+
+  .newsletter h2 {
+    font-size: 38px;
+  }
+
+
+  /* =========================
+     FOOTER
+  ========================= */
+
+  .site-footer {
+    width: 100%;
+    padding: 65px 24px 30px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 24px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+}
