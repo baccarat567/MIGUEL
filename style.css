@@ -1570,3 +1570,335 @@ input {
   }
 
 }
+/* =================================
+   MIGUEL
+   STYLE.CSS — PART 3
+   LOOKBOOK / JOURNAL / NEWSLETTER / FOOTER
+================================= */
+
+
+/* =========================
+   LOOKBOOK
+========================= */
+
+.lookbook {
+  width: 100%;
+  padding: 120px 7%;
+  background: #050505;
+}
+
+.lookbook-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: #222;
+}
+
+.lookbook-card {
+  min-height: 520px;
+  padding: 55px;
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  background: #080808;
+}
+
+.lookbook-card .eyebrow {
+  margin-bottom: 20px;
+}
+
+.lookbook-card h3 {
+  margin: 0;
+
+  font-size: clamp(28px, 4vw, 52px);
+  font-weight: 400;
+  line-height: 1;
+
+  letter-spacing: 0.08em;
+}
+
+.lookbook-card p {
+  margin: 20px 0 0;
+
+  color: #888;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+
+/* =========================
+   JOURNAL
+========================= */
+
+.journal {
+  width: 100%;
+  padding: 120px 7%;
+  background: #050505;
+}
+
+.journal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: #222;
+}
+
+.journal-card {
+  padding: 55px;
+  min-height: 300px;
+
+  background: #080808;
+}
+
+.journal-card .eyebrow {
+  margin-bottom: 25px;
+}
+
+.journal-card h3 {
+  margin: 0 0 25px;
+
+  font-size: clamp(26px, 3vw, 42px);
+  font-weight: 400;
+  line-height: 1.05;
+
+  letter-spacing: 0.06em;
+}
+
+.journal-card p {
+  max-width: 500px;
+
+  margin: 0;
+
+  color: #888;
+  font-size: 14px;
+  line-height: 2;
+}
+
+
+/* =========================
+   NEWSLETTER
+========================= */
+
+.newsletter {
+  width: 100%;
+  padding: 130px 7%;
+
+  background: #111;
+  text-align: center;
+}
+
+.newsletter h2 {
+  margin: 0 0 25px;
+
+  font-size: clamp(36px, 5vw, 64px);
+  line-height: 1;
+
+  letter-spacing: 0.1em;
+}
+
+.newsletter p {
+  max-width: 500px;
+  margin: 0 auto 40px;
+
+  color: #888;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.newsletter-form {
+  max-width: 520px;
+  margin: 0 auto;
+
+  display: flex;
+
+  border-bottom: 1px solid #666;
+}
+
+.newsletter-form input {
+  flex: 1;
+
+  min-width: 0;
+  padding: 18px 0;
+
+  border: 0;
+  outline: 0;
+
+  background: transparent;
+  color: #fff;
+
+  font-size: 14px;
+}
+
+.newsletter-form input::placeholder {
+  color: #666;
+}
+
+.newsletter-form button {
+  padding: 18px 0;
+
+  border: 0;
+  background: transparent;
+
+  color: #fff;
+
+  font-size: 12px;
+  letter-spacing: 0.18em;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+  width: 100%;
+  padding: 80px 7% 35px;
+
+  background: #050505;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+
+  gap: 50px;
+
+  padding-bottom: 70px;
+}
+
+.footer-brand {
+  font-size: 30px;
+  letter-spacing: 0.35em;
+}
+
+.footer-column h4 {
+  margin: 0 0 25px;
+
+  font-size: 11px;
+  font-weight: 400;
+
+  letter-spacing: 0.2em;
+
+  color: #888;
+}
+
+.footer-column a {
+  display: block;
+
+  margin-bottom: 14px;
+
+  font-size: 12px;
+  color: #aaa;
+}
+
+.footer-column a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  padding-top: 25px;
+
+  border-top: 1px solid #222;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+
+  color: #666;
+
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+  .lookbook {
+    padding: 90px 24px;
+  }
+
+  .lookbook-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lookbook-card {
+    min-height: 420px;
+    padding: 35px;
+  }
+
+  .lookbook-card h3 {
+    font-size: 36px;
+  }
+
+
+  .journal {
+    padding: 90px 24px;
+  }
+
+  .journal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .journal-card {
+    min-height: 280px;
+    padding: 35px;
+  }
+
+  .journal-card h3 {
+    font-size: 32px;
+  }
+
+
+  .newsletter {
+    padding: 100px 24px;
+  }
+
+  .newsletter h2 {
+    font-size: 40px;
+  }
+
+  .newsletter-form {
+    width: 100%;
+  }
+
+
+  .site-footer {
+    padding: 70px 24px 30px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 45px 25px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-bottom {
+    display: block;
+  }
+
+  .footer-bottom p {
+    margin-bottom: 10px;
+  }
+
+}
