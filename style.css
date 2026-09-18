@@ -1225,3 +1225,46 @@ input {
     width: 70vw;
   }
 }
+/* =========================
+   SEASON COLLECTION
+========================= */
+
+.shop-section {
+  width: 100%;
+  padding: 120px 7% 100px;
+}
+
+.shop-section .section-heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 60px;
+}
+
+.shop-section .section-heading h2 {
+  margin: 0;
+}
+
+.shop-section .section-note {
+  margin: 0;
+}
+@media (max-width: 800px) {
+  .shop-section {
+    width: 100%;
+    padding: 90px 28px 80px;
+  }
+
+  .shop-section .section-heading {
+    display: block;
+    margin-bottom: 45px;
+  }
+
+  .shop-section .section-heading h2 {
+    margin-top: 18px;
+  }
+
+  .shop-section .section-note {
+    margin-top: 24px;
+  }
+}
