@@ -204,13 +204,10 @@ input {
 
 .hero-mark {
   position: absolute;
-
-  right: 5%;
-
-  width: min(42vw, 500px);
-
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(70vw, 500px);
   opacity: 0.13;
-
   z-index: 1;
 }
 
@@ -1215,5 +1212,13 @@ input {
 
   .footer-brand {
     grid-column: auto;
+  }
+}
+@media (max-width: 800px) {
+  .hero-mark {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    width: 70vw;
   }
 }
