@@ -860,3 +860,18 @@ footer {
   }
 
 }
+@media (max-width: 800px) {
+  .hero {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .hero::before,
+  .hero::after {
+    width: 100%;
+  }
+}
