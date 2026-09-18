@@ -829,3 +829,34 @@ footer {
   }
 
 }
+/* =========================
+   MOBILE HERO FIX
+========================= */
+
+@media (max-width: 800px) {
+
+  .hero {
+    min-height: 720px;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 24px;
+    box-sizing: border-box;
+  }
+
+  .hero h1 {
+    font-size: clamp(48px, 14vw, 76px);
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+    max-width: 100%;
+    word-break: normal;
+  }
+
+  .hero p {
+    max-width: 100%;
+  }
+
+}
